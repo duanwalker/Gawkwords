@@ -1,15 +1,22 @@
 <html>
 
 <head>
-  <title>MeWL</title>
+  <title>Gawkwords</title>
+  <!--Meta-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gawkwords picture based word / phrase guessing game">
+  <meta name="author" content="Duan Walker">
+
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
   <script src="systemjs.config.js"></script>
+
+  <!-- Styles -->
   <link href="resets.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
   <style>
     body {
       margin: 0px;
@@ -19,11 +26,31 @@
   </style>
   <script>
         System.import('app').catch(function(err){ console.error(err); });
-    </script>
+  </script>
 </head>
 
 <body>
   <gw-app>Loading...</gw-app>
+  <div class="game">
+    <section id="header_box" class="header">
+      <span class="level"></span>
+      <span class="coins"></span>
+      <span class="score"></span>
+      <span class="category"></span>
+    </section>
+    <section id="images_box" class="images">
+      <span clss="timer"></span>
+    </section>
+    <section id="guess_box" class="guess">
+      
+    </section>
+    <section id="letter_box" class="letters">
+      
+    </section>
+  </div>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>

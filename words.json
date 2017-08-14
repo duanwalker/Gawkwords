@@ -4,7 +4,8 @@
 		{"word":"Quarterback", "images":[] }
 	],
 	"food":[
-		{"word":"chicken nuggets", "images":[]}
+		{"word":"chicken nuggets", "images":[]},
+		{"word":"sandwich", "images":[]}
 	],
 	"general":[
 		{ "word": "bar none", "images":[]}

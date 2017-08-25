@@ -8,22 +8,19 @@
   <meta name="description" content="Gawkwords picture based word / phrase guessing game">
   <meta name="author" content="Duan Walker">
 
+  <!-- Javascript -->
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
   <script src="node_modules/systemjs/dist/system.src.js"></script>
   <script src="systemjs.config.js"></script>
+  <script src="js/appMain.js"></script>
 
   <!-- Styles -->
   <link href="resets.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
-  <style>
-    body {
-      margin: 0px;
-      padding: 0px;
-      background-color: #32435b;
-    }
-  </style>
+
   <script>
         System.import('app').catch(function(err){ console.error(err); });
   </script>
@@ -32,24 +29,41 @@
 <body>
   <gw-app>Loading...</gw-app>
   <!-- Game UI -->
-  <div class="game">
-    <section id="header_box" class="header">
-      <span class="level"></span>
-      <span class="coins"></span>
-      <span class="score"></span>
-      <span class="category"></span>
-    </section>
-    <section id="images_box" class="images">
-      <span clss="timer"></span>
-      <img class="image1"/><p> + </p><img class="image2"/>
-    </section>
-    <section id="guess_box" class="guess">      
-    </section>
-    <section id="letter_box" class="letters">    
-    </section>
+  <div id="gameUi" class="container">
+    <div class = "row">
+      <div class="col-md-12">
+        <section id="header_box" class="header">
+          <span class="level"></span>
+          <span class="coins"></span>
+          <span class="score"></span>
+          <span class="category"></span>
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <section id="images_box" class="images">
+          <span class="timer"></span>
+          <img class="image1"/><p> + </p><img class="image2"/>
+        </section>
+      </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <section id="guess_box" class="guess">      
+        </section>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <section id="letter_box" class="randomLetters">    
+        </section>
+      </div>
+    </div>    
   </div>
 
   <!-- Bootstrap JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 

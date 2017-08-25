@@ -1,0 +1,30 @@
+body {
+      margin: 0px;
+      padding: 0px;
+      background: #32435b;
+    }
+#images_box{
+	border: 1px solid black;
+	height:40%;
+	width: 100%;
+}
+#guess_box{
+	background: gray;
+	height: 20%;
+	width:100%;
+	text-align: center;
+}
+#letter_box{
+	background:black;
+	position:relative;
+	height:25%;
+	width:100%;
+	bottom:0;
+	right:0;
+}
+.letters{
+	background: url('../images/alphaChips.png') no-repeat center center fixed;
+	text-align: center;
+	width:10px;
+	height:10px;
+}

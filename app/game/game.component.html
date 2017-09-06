@@ -1,0 +1,49 @@
+      <section>
+      	<div class="row center">
+
+      		<h2>Pick a Category</h2>
+      		<button id="generalCatBtn" class="btn categoryBtn" routerLink="general">General</button><button id="foodCatBtn" class="btn categoryBtn" routerLink="food">Food</button><button id="sportsCatBtn" class="btn categoryBtn" routerLink="sports">Sports</button>
+      	</div>
+      </section>
+      <router-outlet></router-outlet>
+
+      <-- move below to respective components-->
+      <-- still need xml "routing tool" for web.config file-->
+      <section>
+        <div class = "row">
+          <div class="col-md-12">
+            <section id="header_box" class="header">
+              <span class="level"></span>
+              <span class="coins"></span>
+              <span class="score"></span>
+              <span class="category"></span>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-md-12">
+            <section id="images_box" class="images">
+              <span class="timer"></span>
+              <img class="image1"/><p> + </p><img class="image2"/>
+            </section>
+          </div>  
+        </div>
+      </section>
+      <section>
+        <div class="row">
+          <div class="col-md-12">
+            <section id="guess_box" class="guess">      
+            </section>
+          </div>
+        </div>
+      </section>
+      <section>  
+        <div class="row">
+          <div class="col-md-12">
+            <section id="letter_box" class="randomLetters">    
+            </section>
+          </div>
+        </div>
+      </section>
